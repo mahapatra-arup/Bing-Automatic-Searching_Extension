@@ -1,0 +1,103 @@
+<!-- CSS only -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bing Search Automator</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fa-all.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+
+<body class="pt-15" style="text-align: center;">
+    <div class="container">
+        <h5 style="color:blue">Bing Searching System</h5>
+        
+        <div class="row mt-15" >
+            
+            <div class="col-6 ">
+                <p> <span id="currentSearchNumber">0</span> / <span id="totSearchesNumber">0</span> (Desktop)</p>
+                <div class="progress mb-15">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-desktop"
+                        role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 ">
+                <p> <span id="currentSearchMobileNumber">0</span> / <span id="totSearchesMobileNumber">0</span> (Mobile)</p>
+                
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-mobile"
+                        role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    </div>
+                </div>
+            </div>
+                
+            
+        </div>
+        <div class="">
+            <button type="button" class="btn btn-primary btn-sm " id="allButton">All</button>
+            <button type="button" class="btn btn-primary btn-sm " id="desktopButton">PC</button>
+            <button type="button" class="btn  btn-primary btn-sm " id="mobileButton">Mobile</button>
+        </div>
+
+        <div class="row">
+            
+
+            <div class="row mt-15">
+                <div class="col-6">
+                    <label class="form-label">Desktop Search:</label>
+                    <input type="number" class="form-control form-control-sm " id="totSearchesForm"
+                        placeholder="Number of searches" min="1" value="">
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label">Mobile Search:</label>
+                    <input type="number" class="form-control form-control-sm " id="totSearchesMobileForm"
+                        placeholder="Number of searches mobile" min="1" value="">
+                </div>
+
+                <div class=" mt-15">
+                    <label class="form-label">Delay Time (ms):</label>
+                    <input type="number" class="form-control form-control-sm " id="txtDelaySearchesForm"
+                        placeholder="Delay of searches" min="1201" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary fixed-bottom">
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav ms-auto">
+                <a class="nav-link waves-effect waves-light" href="" target="_blank" title="Author's Website">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </a>
+                <a class="nav-link waves-effect waves-light" href="https://github.com/AsoStrife/Bing-Search-Automator"
+                    target="_blank" title="Source Code">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a class="nav-link waves-effect waves-light"
+                    href="https://chrome.google.com/webstore/detail/bing-search-automator/ehpnglljgijenbiknlgpcbnnmhfdgbam"
+                    target="_blank" title="Chrome Store">
+                    <i class="fa-brands fa-chrome"></i>
+                </a>
+                <a class="nav-link waves-effect waves-light" href="https://rewards.microsoft.com/" target="_blank"
+                    title="Microsoft Rewards">
+                    <i class="fa-solid fa-medal"></i>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/fa-all.min.js"></script>
+    <script type="module" src="./js/popup.js"></script>
+</body>
+
+</html>
